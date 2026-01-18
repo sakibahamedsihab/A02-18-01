@@ -39,9 +39,10 @@
         </nav>
 
         <!-- Hero section -->
-        <section id="hero" class="bg-[#1A0B2E] overflow-hidden bg-[url(./assets/hero-bg.png)] bg-cover bg-no-repeat bg-center max-w-full">
+        <section id="hero" class="bg-[#1A0B2E] overflow-hidden bg-[url(./assets/hero-bg.png)] bg-contain sm:bg-cover bg-no-repeat bg-position-[100%_25%] sm:bg-center max-w-full">
             <div id="hero-container" class="max-w-100 sm:w-fit mx-auto mt-10 flex flex-col gap-6">
-                <div class="hero-image relative flex justify-center">
+                <div class="hero-image relative w-fit mx-auto">
+                    <div id="new" class="text-[18px] font-semibold absolute bg-[#00FF88] rounded-4xl px-4 py-2 right-0 top-0 sm:top-6 sm:right-6">NEW</div>
                     <img class="max-w-50 sm:max-w-[350px]" src="./assets/hero-circle.png" alt="">
                     <img class="absolute inset-0 mx-auto my-auto max-w-20 sm:max-w-50" src="./assets/microphone.png" alt="">
                 </div>
