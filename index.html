@@ -10,11 +10,30 @@
 </head>
 <body>
     <header>
-        <nav class="bg-[rgba(26,11,46,1)] flex justify-between items-center px-5 py-4"> 
-            <div id="logo">
+        <!-- Navbar -->
+        <nav class="bg-[rgba(26,11,46,1)] flex justify-between sm:justify-around items-center px-5 py-4"> 
+            <div id="logo" class="text-2xl sm:text-4xl">
                 <h1 class="text-white font-bold">Tech<span class="bg-linear-to-t bg-clip-text from-[rgba(247,233,63,1)] via-[rgba(251,9,180,1)] to-[rgba(145,0,248,1)] text-transparent">Wave</span></h1>
             </div>
-            <div>
+
+            <!-- Nav-Menu -->
+             <ul class="hidden sm:flex gap-8 text-white font-light">
+                <li>About</li>
+                <li>Episodes</li>
+                <li>Host</li>
+             </ul>
+             <!-- Nab-Button -->
+              <div class="hidden sm:block">
+                <button class="text-white font-semibold py-3 px-4 rounded-[1000px] bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8]">Subscribe <i class="fa-solid fa-arrow-right text-white"></i></button>
+              </div>
+
+
+
+
+
+
+
+            <div class="sm:hidden">
                 <img src="./assets/hamburger-menu.png" alt="">
             </div>
         </nav>
