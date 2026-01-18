@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
@@ -8,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Document</title>
 </head>
-<body>
+<body class="inter-font">
     <header>
         <!-- Navbar -->
         <nav class="bg-[rgba(26,11,46,1)] flex justify-between sm:justify-around items-center px-5 py-4 border-b-[.5px] border-[#42236b71]"> 
@@ -48,7 +51,7 @@
                 </div>
                <div class="text-center">
                     <h1 class="text-[40px] font-extrabold text-white">TechWave</h1>
-                    <p class="text-white">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                    <p class=" text-[#ffffff86]">Your daily dose of tech insights, productivity hacks, and personal growth</p>
                </div>
                 <div class="flex gap-2 justify-center">
                     <button class="flex items-center gap-2 text-white font-semibold py-3 px-4 rounded-[1000px] bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8]"><img src="./assets/spotify.png" alt="">Listen On Spotify</button>
@@ -64,9 +67,9 @@
         <div id="about-container" class="max-w-100 sm:max-w-[1200px] my-10 mx-auto text-white text-center flex flex-col gap-4">
             <h1 class="text-3xl sm:text-5xl font-bold">About The Podcast</h1>
             <div class="text-[16px] font-light max-w-4xl space-y-6 mx-auto">
-                <p>TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. We break down complex topics into digestible insights, explore productivity strategies that actually work, and share stories of personal growth from industry leaders.
+                <p  class="text-[#ffffff86]">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. We break down complex topics into digestible insights, explore productivity strategies that actually work, and share stories of personal growth from industry leaders.
                 </p>
-                <p>Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+                <p class=" text-[#ffffff86]">Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
             </div>
         </div>
 
@@ -97,14 +100,14 @@
             <h1 class="max-w-100 mx-auto mb-4 pt-10 text-[32px] font-bold text-center sm:mt-30">Why Choose TechWave</h1>
         </div>
         <!-- Grid container of card -->
-        <div id="card-container" class="px-5 grid grid-cols-1 gap-4 sm:grid-cols-3 sm:grid-rows-3 sm:mb-30">
+        <div id="card-container" class="max-w-100 sm:max-w-[1200px] mx-auto px-5 grid grid-cols-1 gap-4 sm:grid-cols-3 sm:grid-rows-3 mb-10 sm:mb-30">
             <!-- card-1 -->
             <div id="grid-card" class="p-6 flex flex-col sm:justify-center gap-4 bg-[rgba(53,17,101,0.4)] rounded-3xl  sm:row-span-2">
                 <div class="">
                     <img class="w-15" src="./assets/headphone.png" alt="">
                 </div>
                 <h1 class="text-[22px] font-bold">Premium Audio Quality</h1>
-                <p class="font-light leading-7">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+                <p class="font-light leading-7  text-[#ffffff86]">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
             </div>
             <!-- card-2 -->
             <div id="grid-card" class="p-6 flex flex-col gap-4 bg-[rgba(53,17,101,0.4)] rounded-3xl sm:col-span-2 ">
@@ -112,7 +115,7 @@
                     <img class="w-15" src="./assets/device.png" alt="">
                 </div>
                 <h1 class="text-[22px] font-bold">Mobile Friendly</h1>
-                <p class="font-light leading-7">Listen on the go with seamless mobile experience and offline downloads.</p>
+                <p class="font-light leading-7  text-[#ffffff86]">Listen on the go with seamless mobile experience and offline downloads.</p>
             </div>
             <!-- card-3 -->
              <div id="grid-card" class="p-6 flex flex-col gap-4 bg-[rgba(53,17,101,0.4)] rounded-3xl sm:col-span-2">
@@ -120,7 +123,7 @@
                     <img class="w-15" src="./assets/location.png" alt="">
                 </div>
                 <h1 class="text-[22px] font-bold">Global Community</h1>
-                <p class="font-light leading-7">Connect with tech enthusiasts from over 120 countries worldwide.</p>
+                <p class="font-light leading-7  text-[#ffffff86]">Connect with tech enthusiasts from over 120 countries worldwide.</p>
             </div>
             <!-- card-4 -->
              <div id="grid-card" class="p-6 flex flex-col gap-4 bg-[rgba(53,17,101,0.4)] rounded-3xl sm:col-span-2">
@@ -128,7 +131,7 @@
                     <img class="w-15" src="./assets/icon.png" alt="">
                 </div>
                 <h1 class="text-[22px] font-bold">Exclusive Interviews</h1>
-                <p class="font-light leading-7">Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
+                <p class="font-light leading-7  text-[#ffffff86]">Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
             </div>
             <!-- card-5 -->
              <div id="grid-card" class="p-6 flex flex-col gap-4 bg-[rgba(53,17,101,0.4)] rounded-3xl">
@@ -136,9 +139,39 @@
                     <img class="w-15" src="./assets/resource.png" alt="">
                 </div>
                 <h1 class="text-[22px] font-bold">Rich Resources</h1>
-                <p class="font-light leading-7">Access show notes, transcripts, and additional learning materials for every episode.</p>
+                <p class="font-light leading-7  text-[#ffffff86]">Access show notes, transcripts, and additional learning materials for every episode.</p>
             </div>
         </div>
       </section>
+
+
+      <!-- Featured episodes here -->
+
+
+
+      <!-- Meet the host section -->
+       <section id="host" class="text-white bg-[#230E3D] overflow-hidden">
+            <div id="host-container" class="max-w-100 sm:max-w-[1200px] mx-auto px-5">
+                <h1 class="text-[32px] sm:text-5xl font-bold text-center mb-6">Meet The Host</h1>
+                <!--Host card -->
+                <div id="host-card" class="p-5 flex flex-col items-center gap-4 bg-[rgba(53,17,101,0.4)] rounded-3xl">
+               <div class="flex flex-col sm:flex-row gap-6">
+                     <div class="flex justify-center">
+                    <img class="max-w-[150px] sm:max-w-[200px]" src="./assets/host.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-4 items-center sm:items-start "> 
+                        <h1 class="text-[22px] font-bold">Alex Kumar</h1>
+                        <p class="leading-7 text-center sm:text-left text-[#ffffff86]">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
+                        <div class="flex gap-2 items-center">
+                            <span class="flex justify-center items-center w-10 h-10 border border-[#533C72] rounded-full"><img src="./assets/linkedin.png" alt=""></span>
+                        <span class="flex justify-center items-center w-10 h-10 border border-[#533C72] rounded-full"><img src="./assets/x.png" alt=""></span>
+                        <span class="flex justify-center items-center w-10 h-10 border border-[#533C72] rounded-full"><img src="./assets/instagram.png" alt=""></span>
+                        <span class="flex justify-center items-center w-10 h-10 border border-[#533C72] rounded-full"><img src="./assets/youtube.png" alt=""></span>
+                    </div>
+               </div>
+               </div>
+            </div>
+            </div>
+       </section>
 </body>
 </html>
