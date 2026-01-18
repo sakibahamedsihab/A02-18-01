@@ -11,7 +11,7 @@
 <body>
     <header>
         <!-- Navbar -->
-        <nav class="bg-[rgba(26,11,46,1)] flex justify-between sm:justify-around items-center px-5 py-4"> 
+        <nav class="bg-[rgba(26,11,46,1)] flex justify-between sm:justify-around items-center px-5 py-4 border-b-[.5px] border-[#42236b71]"> 
             <div id="logo" class="text-2xl sm:text-4xl">
                 <h1 class="text-white font-bold">Tech<span class="bg-linear-to-t bg-clip-text from-[rgba(247,233,63,1)] via-[rgba(251,9,180,1)] to-[rgba(145,0,248,1)] text-transparent">Wave</span></h1>
             </div>
@@ -37,6 +37,25 @@
                 <img src="./assets/hamburger-menu.png" alt="">
             </div>
         </nav>
+
+        <!-- Hero section -->
+        <section id="hero" class="bg-[#1A0B2E] overflow-hidden bg-[url(./assets/hero-bg.png)] bg-cover bg-no-repeat bg-center max-w-full">
+            <div id="hero-container" class="max-w-100 sm:w-fit mx-auto mt-10 flex flex-col gap-6">
+                <div class="hero-image relative flex justify-center">
+                    <img class="max-w-50 sm:max-w-[350px]" src="./assets/hero-circle.png" alt="">
+                    <img class="absolute inset-0 mx-auto my-auto max-w-20 sm:max-w-50" src="./assets/microphone.png" alt="">
+                </div>
+               <div class="text-center">
+                    <h1 class="text-[40px] font-extrabold text-white">TechWave</h1>
+                    <p class="text-white">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+               </div>
+                <div class="flex gap-2 justify-center">
+                    <button class="flex items-center gap-2 text-white font-semibold py-3 px-4 rounded-[1000px] bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8]"><img src="./assets/spotify.png" alt="">Listen On Spotify</button>
+                    <button class="flex items-center gap-2 text-[#00FF88] font-semibold px-5 py-3 border rounded-full" ><img src="./assets/message.png" alt="">Subscribe</button>
+                </div>
+                
+            </div>
+        </section>
     </header>
 </body>
 </html>
