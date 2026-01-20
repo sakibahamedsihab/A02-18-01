@@ -16,18 +16,18 @@
         <!-- Navbar -->
         <nav class="bg-[rgba(26,11,46,1)] flex justify-between sm:justify-around items-center px-5 py-4 border-b-[.5px] border-[#42236b71]"> 
             <div id="logo" class="text-2xl sm:text-4xl">
-                <h1 class="text-white font-bold">Tech<span class="bg-linear-to-t bg-clip-text from-[rgba(247,233,63,1)] via-[rgba(251,9,180,1)] to-[rgba(145,0,248,1)] text-transparent">Wave</span></h1>
+                <h1 class="text-white cursor-pointer font-bold">Tech<span id="txt" class="bg-linear-to-t bg-clip-text from-[rgba(247,233,63,1)] via-[rgba(251,9,180,1)] to-[rgba(145,0,248,1)] text-transparent">Wave</span></h1>
             </div>
 
             <!-- Nav-Menu -->
              <ul class="hidden sm:flex gap-8 text-white font-light">
-                <li>About</li>
-                <li>Episodes</li>
-                <li>Host</li>
+                <li class="cursor-pointer">About</li>
+                <li class="cursor-pointer">Episodes</li>
+                <li class="cursor-pointer">Host</li>
              </ul>
              <!-- Nab-Button -->
               <div class="hidden sm:block">
-                <button class="text-white font-semibold py-3 px-4 rounded-[1000px] bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8]">Subscribe <i class="fa-solid fa-arrow-right text-white"></i></button>
+                <button class="text-white font-semibold py-3 px-4 cursor-pointer rounded-[1000px] bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] hover:bg-linear-to-bl">Subscribe <i class="fa-solid fa-arrow-right text-white"></i></button>
               </div>
 
 
@@ -54,8 +54,8 @@
                     <p class=" text-[#ffffff86]">Your daily dose of tech insights, productivity hacks, and personal growth</p>
                </div>
                 <div class="flex gap-2 justify-center">
-                    <button class="flex items-center gap-2 text-white font-semibold py-3 px-4 rounded-[1000px] bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8]"><img src="./assets/spotify.png" alt="">Listen On Spotify</button>
-                    <button class="flex items-center gap-2 text-[#00FF88] font-semibold px-5 py-3 border rounded-full" ><img src="./assets/message.png" alt="">Subscribe</button>
+                    <button id="spotify-btn" class="flex items-center gap-2 text-white font-semibold cursor-pointer py-3 px-4 rounded-[1000px] bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8]"><img src="./assets/spotify.png" alt="">Listen On Spotify</button>
+                    <button id="subs-btn" class="cursor-pointer flex items-center gap-2 text-[#00FF88] font-semibold px-5 py-3 border rounded-full" ><img src="./assets/message.png" id="mail" alt="">Subscribe</button>
                 </div>
                 
             </div>
@@ -165,7 +165,7 @@
                         <div class="p-6 flex flex-col gap-2">
                             <h2 class="text-white font-bold text-xl">The Future of AI in Eeveryday Life</h1>
                             <p class="text-[#ffffff86]">Exploring how artificial intelligence is transforming our daily routines and what to expect in the next...</p>
-                            <span class="flex items-center gap-1.5 text-[#00FF88]"><img src="./assets/clock.png" alt="">42 min</span>
+                            <span class="flex items-center gap-1.5 text-[#00FF88]"><img src="./assets/clock.png" alt="">8 min</span>
                         </div>
                     </div>
 
@@ -175,9 +175,9 @@
                             <iframe class="w-full h-full rounded-t-3xl" src="https://www.youtube.com/embed/g3MAx1TDEGg?si=zc2yM4gHA7pXmuY6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                         <div class="p-6 flex flex-col gap-2">
-                            <h2 class="text-white font-bold text-xl">Learn Fullstack Development </h1>
+                            <h2 class="text-white font-bold text-xl">Learn Fullstack Development with me </h1>
                             <p class="text-[#ffffff86]">Practical strategies for staying productive and maintaining work-life balance in a...</p>
-                            <span class="flex items-center gap-1.5 text-[#00FF88]"><img src="./assets/clock.png" alt="">35 min</span>
+                            <span class="flex items-center gap-1.5 text-[#00FF88]"><img src="./assets/clock.png" alt="">13 min</span>
                         </div>
                     </div>
 
@@ -190,7 +190,7 @@
                         <div class="p-6 flex flex-col gap-2">
                             <h2 class="text-white font-bold text-xl">Career Growth in Tech: A Roadmap</h1>
                             <p class="text-[#ffffff86]">Expert advice on navigating your tech career from junior developer to senior leadership...</p>
-                            <span class="flex items-center gap-1.5 text-[#00FF88]"><img src="./assets/clock.png" alt="">42 min</span>
+                            <span class="flex items-center gap-1.5 text-[#00FF88]"><img src="./assets/clock.png" alt="">7 min</span>
                         </div>
                     </div>
 
@@ -215,10 +215,10 @@
                         <h1 class="text-[22px] font-bold">Alex Kumar</h1>
                         <p class="leading-7 text-center sm:text-left text-[#ffffff86]">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
                         <div class="flex gap-2 items-center">
-                            <span class="flex justify-center items-center w-10 h-10 border border-[#533C72] rounded-full"><img src="./assets/linkedin.png" alt=""></span>
-                        <span class="flex justify-center items-center w-10 h-10 border border-[#533C72] rounded-full"><img src="./assets/x.png" alt=""></span>
-                        <span class="flex justify-center items-center w-10 h-10 border border-[#533C72] rounded-full"><img src="./assets/instagram.png" alt=""></span>
-                        <span class="flex justify-center items-center w-10 h-10 border border-[#533C72] rounded-full"><img src="./assets/youtube.png" alt=""></span>
+                            <span class="flex justify-center items-center w-10 h-10 border border-[#533C72] rounded-full"><img class="cursor-pointer" src="./assets/linkedin.png" alt=""></span>
+                        <span class="flex justify-center items-center w-10 h-10 border border-[#533C72] rounded-full"><img class="cursor-pointer" src="./assets/x.png" alt=""></span>
+                        <span class="flex justify-center items-center w-10 h-10 border border-[#533C72] rounded-full"><img class="cursor-pointer" src="./assets/instagram.png" alt=""></span>
+                        <span class="flex justify-center items-center w-10 h-10 border border-[#533C72] rounded-full"><img class="cursor-pointer" src="./assets/youtube.png" alt=""></span>
                     </div>
                </div>
                </div>
@@ -234,22 +234,22 @@
                 </div>
                 <div id="flex-icon-container" class="flex flex-wrap px-8 items-center justify-center gap-4 sm:gap-10">
                     <!-- icon-1 -->
-                    <div id="grid-icon" class="flex items-center gap-2">
+                    <div id="grid-icon" class="cursor-pointer flex items-center gap-2">
                         <img src="./assets/spotify.png" alt="">
                         <span class="text-[#ffffff86]">Spotify</span>
                     </div>
                     <!-- icon-2 -->
-                    <div id="grid-icon" class="flex items-center gap-2">
+                    <div id="grid-icon" class="cursor-pointer flex items-center gap-2">
                         <img src="./assets/apple-podcast.png" alt="">
                         <span class="text-[#ffffff86]">Apple Podcasts</span>
                     </div>
                     <!-- icon-3 -->
-                    <div id="grid-icon" class="flex items-center gap-2">
+                    <div id="grid-icon" class="cursor-pointer flex items-center gap-2">
                         <img src="./assets/youtube-podcast.png" alt="">
                         <span class="text-[#ffffff86]">YouTube</span>
                     </div>
                     <!-- icon-4 -->
-                    <div id="grid-icon" class="flex items-center gap-2">
+                    <div id="grid-icon" class="cursor-pointer flex items-center gap-2">
                         <img src="./assets/twitter.png" alt="">
                         <span class="text-[#ffffff86]">Twitter</span>
                     </div>
