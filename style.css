@@ -66,3 +66,64 @@
     border: 1px solid #00FF88;
     color: #00FF88;
 }
+
+
+@media screen and (max-width: 630px) {
+    #new {
+    animation: new;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes new {
+    from{
+        transform: translate(0px, 0px);
+        opacity: 100%;
+        background-color: #00FF88;
+    }
+    to{
+        transform: translate(0px, 3px);
+        opacity: 20%;
+        background-color: rgb(232, 137, 137);
+    }
+}
+
+
+#txt {
+    animation: clr;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+
+}
+
+@keyframes clr{
+    from{
+        opacity: 100%;
+    }
+    to{
+        opacity: 10%;
+    }
+}
+
+
+#subs-btn{
+    transition: ease-in-out;
+}
+#subs-btn:hover{
+    background: linear-gradient(#F7E93F, #FB09B4, #9100F8);
+    color: white
+}
+
+#spotify-btn{
+    transition: ease-in-out;
+}
+#spotify-btn:hover {
+    background: transparent;
+    border: 1px solid #00FF88;
+    color: #00FF88;
+}
+}
